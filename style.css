@@ -93,13 +93,11 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
+  height: -webkit-fill-available;
 }
 .hero .info .description p {
   font-size: 2rem;
   font-style: italic;
-}
-.hero .info .description p:hover {
   background: linear-gradient(89deg, rgba(255, 255, 255, 0.51) 0.44%, #ffffff 54.26%, rgba(255, 255, 255, 0.5) 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,13 +115,12 @@ hr {
 
 .profession {
   display: flex;
-  align-items: center;
+  align-items: normal;
   justify-content: space-between;
   gap: 50px;
 }
 .profession .card-freelancer {
   width: 50%;
-  height: 300px;
 }
 .profession .card-freelancer .header-card-profession {
   display: flex;
@@ -185,4 +182,89 @@ hr {
 }
 .card-footer img {
   width: 25px;
+}
+
+@media screen and (max-width: 1378px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .info {
+    gap: 35px;
+  }
+}
+@media screen and (max-width: 1152px) {
+  .profession {
+    flex-direction: column;
+  }
+  .profession .card-freelancer {
+    width: 100%;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .skills .hard-skill {
+    width: 100%;
+  }
+  .skills .soft-skill {
+    width: 100%;
+  }
+  .card-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .card-footer .shape-vertical {
+    display: none;
+  }
+  .card-footer .shape-horizontal {
+    display: block;
+  }
+}
+@media screen and (min-width: 1153px) {
+  .card-footer .shape-vertical {
+    display: block;
+  }
+  .card-footer .shape-horizontal {
+    display: none;
+  }
+}
+@media screen and (max-width: 890px) {
+  .interests {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .interests .card-interests {
+    width: 100%;
+  }
+  .interests .shape-vertical {
+    display: none;
+  }
+  .interests .shape-horizontal {
+    display: block;
+  }
+}
+@media screen and (min-width: 890px) {
+  .interests .shape-vertical {
+    display: block;
+  }
+  .interests .shape-horizontal {
+    display: none;
+  }
+}
+@media screen and (max-width: 596px) {
+  .header-card-profession {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+  .header-card-profession .span-date {
+    width: 100%;
+  }
+  .card-soft-skill {
+    flex-direction: column-reverse;
+  }
+  .card-soft-skill .span-date {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
