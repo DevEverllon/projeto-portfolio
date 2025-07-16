@@ -19,11 +19,6 @@ Este é um projeto de página de perfil/portfólio desenvolvido com **HTML5** e 
 - CSS3 (Flexbox e responsividade)
 - Emojis e fontes nativas (sem dependências externas)
 
-## 📸 Preview
-
-![preview do projeto](./preview.jpg) <!-- Substitua por uma imagem real do projeto -->
-
-
 ## 📁 Estrutura do Projeto
 ```bash
 ├── index.html
