@@ -2,6 +2,8 @@
 
 Este é um projeto de página de perfil/portfólio desenvolvido com **HTML5** e **SASS (CSS pré-processado)**, com foco em design moderno, acessibilidade e responsividade.
 
+![Preview do Projeto](screencapture-127-0-0-1-5500-index-html-2025-07-15-18_25_59.png)
+
 ## ✨ Funcionalidades
 
 - Layout responsivo
