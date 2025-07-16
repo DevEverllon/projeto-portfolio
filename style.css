@@ -95,8 +95,8 @@ hr {
   justify-content: space-between;
   height: -webkit-fill-available;
 }
-.hero .info .description p {
-  font-size: 2rem;
+.hero .info .description h1 {
+  font-size: 2em;
   font-style: italic;
   background: linear-gradient(89deg, rgba(255, 255, 255, 0.51) 0.44%, #ffffff 54.26%, rgba(255, 255, 255, 0.5) 99%);
   -webkit-background-clip: text;
@@ -253,8 +253,14 @@ hr {
   }
 }
 @media screen and (max-width: 596px) {
+  body {
+    padding: 25px;
+  }
+  h1 {
+    font-size: 10px;
+  }
   .header-card-profession {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: stretch;
     gap: 15px;
   }
@@ -263,8 +269,12 @@ hr {
   }
   .card-soft-skill {
     flex-direction: column-reverse;
+    align-items: stretch;
   }
-  .card-soft-skill .span-date {
-    width: 100%;
-  }
+}
+.hard-skill h2 {
+  font-size: 10px;
+}
+.hard-skill img {
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
